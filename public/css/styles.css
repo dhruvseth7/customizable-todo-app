@@ -1,0 +1,119 @@
+.jumbotron.jumbotron-fluid {
+  background-color: #ffffff;
+  color: #7952b3;
+}
+
+body {
+  background-color: #7952b3 !important;
+  color: #ffffff;
+}
+
+.form {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-left: -12px;
+}
+
+.delete {
+  margin-top: -35px;
+  float: right;
+  margin-right: -120px;
+}
+
+#deletePage {
+  color: #ffffff;
+  font-size: 30pt;
+  margin-left: 691px;
+  margin-top: 20px;
+}
+
+#deletePage:hover {
+  opacity: 0.8;
+  
+}
+
+
+.fa-check:hover {
+  color: #32CD32;
+}
+
+.nav {
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.nav-item {
+  margin-top: 15px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+#date {
+  float: right;
+  margin-top: -120px;
+}
+
+.nav-link {
+  color: #7952b3;
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  color: #89729E;
+  opacity: 0.7;
+}
+
+#btn {
+  border-radius: 80%;
+  text-align: center;
+  margin-left: 95px;
+  margin-top: 10px;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-color: #7952b3;
+  border-style: solid;
+  bored-width: thin;
+  background-color: #ffffff;
+  color: #7952b3;
+}
+
+#btn:hover {
+  color: #ffffff;
+  background-color: #7952b3;
+}
+
+#postedDate {
+  float: right;
+  opacity: 0.7;
+}
+
+footer {
+  color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.list-group {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 38%;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #ffffff;
+}

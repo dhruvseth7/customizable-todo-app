@@ -1,0 +1,37 @@
+  <%- include('header') -%>
+  <body>
+
+    <ul class="list-group">
+        <% if (itemList.length == 0) { %>
+          <li class="list-group-item">No items in your list</li>
+        <% } else { %>
+            <% itemList.forEach((item) => { %>
+              <form action="/delete" method="POST">
+                  <li class="list-group-item">
+                    <%= item.title %>
+                    <br>
+                    <small><%= item.comments != "" ? item.comments : "..." %></small>
+                    <small id="postedDate"><%= item.postedDate %></small>
+                    <button type="submit" class="btn delete" name="taskCompleted" value="<%= title + " : " + item._id %>"><i class="fa fa-check"></i></button>
+                  </li>
+              </form>
+            <% }) %>
+        <% } %>
+        <li id="newItem" class="list-group-item">
+          <form class="form" action="/" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" name="title" placeholder="New Item" required>
+                <input type="text" class="form-control" name="comments" placeholder="Comments">
+                <button id="btn" type="submit" name="source" value=<%= title %>>+</button>
+              </div>
+          </form>
+        </li>
+    </ul>
+
+
+    <form action="/deleteCustomList" method="POST">
+      <button id="deletePage" class="btn btn-sm rounded-0" name="deletePage" value="<%= title %>" type="submit" ><i class="fa fa-trash"></i></button>
+    </form>
+
+
+    <%- include('footer') -%>
